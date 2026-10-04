@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjiv Passbook Class 8 - Free PDF & Study Portal</title>
+  <meta name="description" content="Free chapter-wise PDF solutions, study guides, and model question papers for Class 8 Sanjiv Passbook across Mathematics, Science, Social Science, Hindi, English, and Sanskrit." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- jsPDF CDN for on-the-fly authentic PDF generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+  </style>
+<script src="/_aistudio-iframe.js?v=2c34bde1"></script></head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- TOP HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Brand -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-700 flex items-center justify-center text-white shadow-sm font-bold text-lg">
+            सं
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="font-bold text-lg sm:text-xl text-slate-900 tracking-tight">
+                संजीव पासबुक <span class="text-emerald-700">Class 8</span>
+              </span>
+              <span class="hidden xl:inline text-[11px] font-medium text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded">
+                by sarvam-devlopers
+              </span>
+            </div>
+            <p class="text-xs text-slate-700 hidden sm:block">
+              RBSE & CBSE NCERT Free PDF Portal · Made by sarvam-devlopers
+            </p>
+          </div>
+        </div>
+
+        <!-- Medium Selector (Segmented Control) -->
+        <div class="hidden md:flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs font-semibold">
+          <button id="med-btn-both" onclick="setMedium('both')" class="px-3 py-1.5 rounded-md bg-white text-slate-900 shadow-sm transition-colors">
+            All Mediums (दोनों)
+          </button>
+          <button id="med-btn-hi" onclick="setMedium('hi')" class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 transition-colors">
+            हिंदी माध्यम (Hindi)
+          </button>
+          <button id="med-btn-en" onclick="setMedium('en')" class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 transition-colors">
+            English Medium
+          </button>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <a href="#blueprint" class="hidden lg:inline-flex items-center text-xs font-medium text-slate-600 hover:text-slate-900 px-2 py-1.5">
+            Board Blueprint
+          </a>
+          <a href="#reviews" class="hidden lg:inline-flex items-center text-xs font-medium text-slate-600 hover:text-slate-900 px-2 py-1.5">
+            Reviews & Ratings
+          </a>
+          <a href="#faq" class="hidden lg:inline-flex items-center text-xs font-medium text-slate-600 hover:text-slate-900 px-2 py-1.5">
+            FAQs
+          </a>
+          <button onclick="openUploadModal()" class="inline-flex items-center space-x-2 bg-emerald-700 hover:bg-emerald-800 text-white px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors shadow-sm cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+            <span>Upload PDF</span>
+            <span id="header-pdf-count" class="hidden bg-emerald-900 text-emerald-100 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-b from-slate-100/80 via-white to-slate-50 border-b border-slate-200 py-10 sm:py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-xs sm:text-sm font-semibold text-emerald-800 tracking-wider uppercase mb-2 flex items-center justify-center space-x-2">
+        <span>RBSE & CBSE Class 8 · 2025–2026 Session</span>
+        <span aria-hidden="true" class="text-slate-300">·</span>
+        <span class="text-slate-600 font-medium">Made by sarvam-devlopers</span>
+      </p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Sanjiv Passbook Class 8 PDF <span class="text-emerald-700 block sm:inline">Free Download Portal</span>
+      </h1>
+      <p class="mt-3 text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+        कक्षा 8 संजीव पासबुक के सभी विषयों (गणित, विज्ञान, सामाजिक विज्ञान, अंग्रेजी, हिंदी, संस्कृत)
+        के अध्यायवार समाधान, फॉर्मूला शीट, मॉडल पेपर एवं वस्तुनिष्ठ प्रश्नोत्तरी।
+      </p>
+
+      <!-- Zero-Pill Metadata row -->
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-x-2 text-xs sm:text-sm text-slate-700 font-medium">
+        <span>6 Board Subjects</span>
+        <span aria-hidden="true" class="text-slate-400">·</span>
+        <span>60+ Solved Chapters</span>
+        <span aria-hidden="true" class="text-slate-400">·</span>
+        <span>100% Free Access</span>
+        <span aria-hidden="true" class="text-slate-400">·</span>
+        <a href="#reviews" class="text-amber-700 hover:underline inline-flex items-center space-x-1">
+          <span>★ 4.9 Rating (1.2k+ Reviews)</span>
+        </a>
+      </div>
+
+      <!-- Search Box -->
+      <div class="mt-8 max-w-2xl mx-auto relative flex items-center">
+        <svg class="w-5 h-5 text-slate-400 absolute left-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input
+          id="search-input"
+          type="text"
+          oninput="handleSearch(this.value)"
+          placeholder="Search by chapter, topic or keyword (e.g. Rational Numbers, फसल, धातु, Tsunami, ध्वनि)..."
+          class="w-full pl-12 pr-12 py-3.5 bg-white border border-slate-300 rounded-xl shadow-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 text-sm sm:text-base transition-all"
+        />
+        <button id="clear-search-btn" onclick="clearSearch()" class="hidden absolute right-3.5 text-xs text-slate-400 hover:text-slate-700 p-1">Clear</button>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <a href="#subjects-section" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Browse Chapter PDFs</span>
+        </a>
+        <button onclick="openUploadModal()" class="inline-flex items-center space-x-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors cursor-pointer">
+          <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+          <span>Upload Your Sanjiv PDF</span>
+        </button>
+      </div>
+
+      <!-- Upload Ready Callout Banner -->
+      <div class="mt-8 bg-amber-50/80 border border-amber-200/90 rounded-xl p-4 text-left max-w-3xl mx-auto flex items-start space-x-3.5">
+        <div class="p-1.5 bg-amber-100 text-amber-800 rounded-lg shrink-0 mt-0.5">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <div class="text-xs sm:text-sm text-amber-950">
+          <p class="font-semibold text-amber-900">
+            Ready for your PDFs! (आप अपनी पीडीएफ यहाँ जोड़ सकते हैं)
+          </p>
+          <p class="text-amber-800/90 mt-0.5 leading-relaxed">
+            Download our ready-made chapter study packs below or click
+            <button onclick="openUploadModal()" class="font-bold underline decoration-amber-500 hover:text-amber-900 cursor-pointer">Upload PDF</button>
+            to attach your own scanned Sanjiv Passbook files directly to any chapter!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 flex-1 w-full">
+    <!-- SUBJECT SELECTOR -->
+    <div id="subjects-section" class="scroll-mt-24">
+      <div class="mb-4">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+          Select Class 8 Subject (विषय चुनें)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-0.5">
+          Click any subject to browse solved chapters, formulas, and free PDF download links.
+        </p>
+      </div>
+
+      <!-- Subject Tabs -->
+      <div id="subject-tabs-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- CHAPTER LIST CONTAINER -->
+    <div id="chapters-container" class="mt-8">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- BOARD BLUEPRINT SECTION -->
+    <section id="blueprint" class="scroll-mt-24 mt-16 pt-12 border-t border-slate-200">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <p class="text-xs font-semibold text-emerald-800 tracking-wider uppercase mb-1">
+          Official Examination Pattern
+        </p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Class 8 Board Marks Weightage & Question Paper Scheme
+        </h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Class 8 annual board examination evaluates 100 marks total per subject.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-base">80</div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Board Theory Exam</h3>
+              <p class="text-xs text-slate-500">2 Hours 30 Minutes Written Paper</p>
+            </div>
+          </div>
+          <ul class="space-y-2.5 text-xs text-slate-700">
+            <li class="flex items-center justify-between border-b border-slate-100 pb-1.5">
+              <span>Section A: Multiple Choice (8 Qs)</span>
+              <span class="font-semibold text-slate-900">8 Marks</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-100 pb-1.5">
+              <span>Section B: Very Short Answer (4 Qs)</span>
+              <span class="font-semibold text-slate-900">8 Marks</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-100 pb-1.5">
+              <span>Section C: Short Answer Type</span>
+              <span class="font-semibold text-slate-900">32 Marks</span>
+            </li>
+            <li class="flex items-center justify-between pb-1">
+              <span>Section D: Long Answer & Essay (Choice)</span>
+              <span class="font-semibold text-slate-900">32 Marks</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-base">20</div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">School Sessional Marks</h3>
+              <p class="text-xs text-slate-500">Internal Continuous Assessment</p>
+            </div>
+          </div>
+          <ul class="space-y-2.5 text-xs text-slate-700">
+            <li class="flex items-center justify-between border-b border-slate-100 pb-1.5">
+              <span>Periodic Tests (1st & 2nd Term)</span>
+              <span class="font-semibold text-slate-900">10 Marks</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-100 pb-1.5">
+              <span>Project Work & Practicals</span>
+              <span class="font-semibold text-slate-900">5 Marks</span>
+            </li>
+            <li class="flex items-center justify-between pb-1">
+              <span>Attendance & Conduct</span>
+              <span class="font-semibold text-slate-900">5 Marks</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-base">5+</div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Sanjiv Model Papers</h3>
+              <p class="text-xs text-slate-500">Complete Self-Assessment Packs</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Every Sanjiv Passbook includes 5 solved model papers prepared strictly in accordance
+            with the state board sample paper blueprint with step-wise marks distribution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS & RATINGS SECTION -->
+    <section id="reviews" class="scroll-mt-24 mt-16 pt-12 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <div class="flex items-center space-x-2 text-xs font-semibold text-emerald-800 tracking-wider uppercase mb-1">
+              <span>Community Feedback</span>
+              <span aria-hidden="true" class="text-slate-400">·</span>
+              <span class="text-slate-700">Crafted by sarvam-devlopers</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Public Reviews & Ratings (छात्र समीक्षाएं)
+            </h2>
+            <p class="text-sm text-slate-600 mt-1 max-w-2xl">
+              See what Class 8 students and educators say about this Sanjiv Passbook portal, or rate and share your own experience!
+            </p>
+          </div>
+
+          <button onclick="toggleReviewForm()" class="inline-flex items-center space-x-2 bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-colors shadow-xs shrink-0 self-start md:self-auto cursor-pointer">
+            <svg class="w-4 h-4 text-amber-300 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span id="review-toggle-text">Write a Review / Rate</span>
+          </button>
+        </div>
+
+        <div id="review-alert" class="hidden mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 text-sm flex items-center space-x-2">
+          <span>Thank you! Your review and rating have been posted.</span>
+        </div>
+
+        <!-- Rating Overview Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+            <div>
+              <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Overall Satisfaction</p>
+              <div class="flex items-baseline space-x-2 mt-2">
+                <span class="text-4xl sm:text-5xl font-extrabold text-slate-900">4.9</span>
+                <span class="text-slate-500 text-sm font-medium">/ 5.0</span>
+              </div>
+              <div class="flex items-center space-x-1 mt-2 text-amber-400">
+                <span>★★★★★</span>
+              </div>
+            </div>
+            <div class="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-600 flex items-center justify-between">
+              <span>Based on 1,280+ ratings</span>
+              <span class="font-semibold text-emerald-700">99% Recommended</span>
+            </div>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Rating Distribution</p>
+            <div class="space-y-2 text-xs text-slate-600">
+              <div class="flex items-center space-x-2">
+                <span class="w-10">5 Star</span>
+                <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="bg-amber-400 h-full rounded-full w-[94%]"></div>
+                </div>
+                <span class="w-8 text-right font-mono font-medium">94%</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-10">4 Star</span>
+                <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="bg-amber-400 h-full rounded-full w-[5%]"></div>
+                </div>
+                <span class="w-8 text-right font-mono font-medium">5%</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-10">3 Star</span>
+                <div class="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div class="bg-amber-400 h-full rounded-full w-[1%]"></div>
+                </div>
+                <span class="w-8 text-right font-mono font-medium">1%</span>
+              </div>
+            </div>
+            <p class="mt-4 text-[11px] text-slate-400">Verified Class 8 RBSE / NCERT student ratings</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+            <div>
+              <p class="text-emerald-400 text-xs font-semibold uppercase tracking-wider">Development Credits</p>
+              <h3 class="text-lg font-bold text-white mt-2">Engineered by sarvam-devlopers</h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Dedicated to providing free, high-speed educational access, formula sheets, and authentic Sanjiv Passbook solutions to every Class 8 student.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-700/80 flex items-center justify-between text-xs text-slate-300">
+              <span>Class 8 Portal</span>
+              <span class="text-emerald-400 font-semibold">100% Free Forever</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Review Form (Collapsible) -->
+        <div id="review-form-container" class="hidden bg-white border-2 border-emerald-200 rounded-2xl p-5 sm:p-7 mb-8 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900 mb-1">Submit Your Review & Rating</h3>
+          <p class="text-xs text-slate-500 mb-5">Your rating will appear publicly to guide other Class 8 students.</p>
+
+          <form onsubmit="handleReviewSubmit(event)" class="space-y-4 max-w-2xl">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1.5">Rating (रेटिंग):</label>
+              <div class="flex items-center space-x-2">
+                <select id="review-stars-select" class="text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                  <option value="5">★★★★★ (5 Stars - Excellent)</option>
+                  <option value="4">★★★★☆ (4 Stars - Very Good)</option>
+                  <option value="3">★★★☆☆ (3 Stars - Good)</option>
+                  <option value="2">★★☆☆☆ (2 Stars - Average)</option>
+                  <option value="1">★☆☆☆☆ (1 Star - Needs Improvement)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name (आपका नाम):</label>
+                <input type="text" id="review-name" required placeholder="e.g. Ramesh Kumar" class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Role / City (कक्षा / शहर):</label>
+                <input type="text" id="review-role" placeholder="e.g. Class 8 Student, Jaipur" class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Subject Reviewed (विषय):</label>
+              <select id="review-subject" class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                <option value="All Subjects">All Subjects (समस्त विषय)</option>
+                <option value="Mathematics">Mathematics (गणित)</option>
+                <option value="Science">Science (विज्ञान)</option>
+                <option value="Social Science">Social Science (सामाजिक विज्ञान)</option>
+                <option value="English">English (अंग्रेजी)</option>
+                <option value="Hindi">Hindi (हिंदी)</option>
+                <option value="Sanskrit">Sanskrit (संस्कृत)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Your Feedback (आपकी समीक्षा):</label>
+              <textarea id="review-comment" rows="3" required placeholder="Share how this portal and sarvam-devlopers helped you..." class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+            </div>
+
+            <div class="flex justify-end space-x-3 pt-2">
+              <button type="button" onclick="toggleReviewForm()" class="px-4 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-100 cursor-pointer">Cancel</button>
+              <button type="submit" class="inline-flex items-center space-x-2 bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-2 rounded-lg text-xs sm:text-sm font-semibold cursor-pointer">
+                <span>Post Public Review</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div id="reviews-list-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="scroll-mt-24 mt-16 pt-12 border-t border-slate-200">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Frequently Asked Questions (अक्सर पूछे जाने वाले प्रश्न)
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            Everything you need to know about downloading and utilizing Class 8 Sanjiv Passbook PDFs.
+          </p>
+        </div>
+
+        <div class="space-y-3" id="faq-list">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-10 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center space-x-3 text-left">
+          <div class="w-9 h-9 rounded-lg bg-emerald-700 flex items-center justify-center text-white font-bold text-sm">
+            S8
+          </div>
+          <div>
+            <p class="font-bold text-sm text-slate-900">
+              संजीव पासबुक कक्षा 8 अध्ययन पोर्टल
+            </p>
+            <div class="flex items-center space-x-2 text-xs text-slate-500 mt-0.5">
+              <span class="font-medium text-emerald-800">Made by sarvam-devlopers</span>
+              <span aria-hidden="true">·</span>
+              <span>RBSE & NCERT Pattern</span>
+              <span aria-hidden="true">·</span>
+              <span>100% Free Educational Access</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center md:text-right text-xs text-slate-600 max-w-md">
+          <p>
+            Engineered with pride by <strong class="text-slate-800">sarvam-devlopers</strong> for Class 8 board students. Sanjiv Passbook is a registered trademark of Sanjiv Prakashan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHAPTER STUDY READER MODAL -->
+  <div id="reader-modal" class="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs hidden items-center justify-center p-2 sm:p-4 md:p-6">
+    <div class="bg-white rounded-2xl max-w-4xl w-full border border-slate-200 shadow-2xl overflow-hidden flex flex-col h-[90vh]">
+      <!-- Modal Top Bar -->
+      <div class="px-5 py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50/90 shrink-0">
+        <div>
+          <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
+            <span id="reader-sub-title">Mathematics</span>
+            <span aria-hidden="true">·</span>
+            <span id="reader-ch-num">Chapter 1</span>
+            <span aria-hidden="true">·</span>
+            <span id="reader-marks">6 Marks</span>
+          </div>
+          <h3 id="reader-heading" class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+            Rational Numbers (परिमेय संख्याएँ)
+          </h3>
+        </div>
+
+        <div class="flex items-center space-x-2 shrink-0">
+          <button id="reader-attach-btn" onclick="openUploadForCurrentChapter()" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-xs font-semibold cursor-pointer">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+            <span>Attach PDF</span>
+          </button>
+          <button id="reader-download-btn" onclick="downloadCurrentChapterPdf()" class="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold shadow-xs cursor-pointer">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download PDF</span>
+          </button>
+          <button onclick="closeReaderModal()" class="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/60 cursor-pointer ml-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="px-5 pt-3 pb-2 border-b border-slate-200 bg-white shrink-0 flex items-center space-x-2">
+        <button id="tab-btn-notes" onclick="setReaderTab('notes')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-white cursor-pointer">
+          Notes & Summary
+        </button>
+        <button id="tab-btn-solutions" onclick="setReaderTab('solutions')" class="px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:bg-slate-100 cursor-pointer">
+          Solved Questions
+        </button>
+        <button id="tab-btn-mcqs" onclick="setReaderTab('mcqs')" class="px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:bg-slate-100 cursor-pointer">
+          Practice MCQs
+        </button>
+        <button id="tab-btn-pdf" onclick="setReaderTab('pdf')" class="hidden px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-800 text-white cursor-pointer">
+          Attached PDF Document
+        </button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div id="reader-body" class="flex-1 overflow-y-auto p-5 sm:p-7">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- UPLOAD MODAL -->
+  <div id="upload-modal" class="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs hidden items-center justify-center p-3 sm:p-6">
+    <div class="bg-white rounded-2xl max-w-2xl w-full border border-slate-200 shadow-xl overflow-hidden flex flex-col max-h-[92vh]">
+      <div class="px-5 py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50/70">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900">
+            Attach & Upload Sanjiv Passbook PDFs
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">
+            Connect your PDF documents to any Class 8 subject or chapter.
+          </p>
+        </div>
+        <button onclick="closeUploadModal()" class="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/60 cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-5 sm:p-6 overflow-y-auto space-y-6">
+        <form onsubmit="handleUploadSubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1.5">Select Subject (विषय)</label>
+              <select id="upload-subject-select" onchange="onUploadSubjectChange(this.value)" class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                <!-- Injected via JavaScript -->
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1.5">Select Chapter (अध्याय)</label>
+              <select id="upload-chapter-select" class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                <!-- Injected via JavaScript -->
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1.5">Choose PDF File (.pdf)</label>
+            <div id="drop-area" onclick="document.getElementById('pdf-file-input').click()" class="border-2 border-dashed border-slate-300 hover:border-slate-400 rounded-xl p-6 text-center cursor-pointer bg-slate-50/50 transition-colors">
+              <input type="file" id="pdf-file-input" accept="application/pdf,.pdf" onchange="handleFileChosen(this.files)" class="hidden" />
+              <div id="file-drop-prompt">
+                <svg class="w-8 h-8 mx-auto text-slate-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                <p class="text-sm font-semibold text-slate-800">Click to choose PDF or drag & drop here</p>
+                <p class="text-xs text-slate-500 mt-1">Accepts Sanjiv Passbook scans, model papers, and solved notes</p>
+              </div>
+              <div id="file-selected-info" class="hidden text-emerald-800 font-semibold text-sm"></div>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1.5">Optional Label or Notes</label>
+            <input type="text" id="upload-notes-input" placeholder="e.g. Sanjiv 2026 Edition, Complete Solved Deskwork..." class="w-full text-xs sm:text-sm bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+          </div>
+
+          <div class="flex justify-end pt-2">
+            <button type="submit" id="upload-submit-btn" disabled class="inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-slate-200 text-slate-400 cursor-not-allowed transition-colors">
+              <span>Save & Attach PDF</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="pt-4 border-t border-slate-200">
+          <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center justify-between">
+            <span>Attached Custom PDFs (<span id="stored-count-label">0</span>)</span>
+            <span class="text-xs font-normal text-slate-500">Stored in browser</span>
+          </h4>
+          <div id="stored-pdfs-list" class="space-y-2 max-h-56 overflow-y-auto pr-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATION DATA & JAVASCRIPT LOGIC -->
+  <script>
+    // DATA SOURCE: Complete Class 8 Sanjiv Passbook Curriculum
+    const SUBJECTS = [
+      {
+        id: 'maths',
+        nameEn: 'Mathematics',
+        nameHi: 'गणित',
+        color: 'emerald',
+        bookName: 'गणित कक्षा 8 (Mathematics)',
+        boardMarks: 80,
+        chapters: [
+          {
+            id: 'maths-ch-1',
+            number: 1,
+            titleEn: 'Rational Numbers',
+            titleHi: 'परिमेय संख्याएँ',
+            marksWeightage: 6,
+            pagesCount: 18,
+            summary: 'Properties of rational numbers (closure, commutativity, associativity), additive and multiplicative inverses, representation on number line, and finding rational numbers between two numbers.',
+            summaryHi: 'परिमेय संख्याओं के गुणधर्म (संवृत, क्रमविनिमेयता, साहचर्यता), योज्य एवं गुणात्मक प्रतिलोम, संख्या रेखा पर निरूपण तथा दो संख्याओं के बीच परिमेय संख्याएँ ज्ञात करना।',
+            keyPoints: [
+              'A rational number is in form p/q where p, q are integers and q ≠ 0.',
+              '0 is additive identity; 1 is multiplicative identity.',
+              'The reciprocal or multiplicative inverse of a/b is b/a.'
+            ],
+            questions: [
+              {
+                qEn: 'Find three rational numbers between 1/4 and 1/2.',
+                qHi: '1/4 और 1/2 के मध्य तीन परिमेय संख्याएँ ज्ञात कीजिए।',
+                aEn: '1/4 = 4/16 and 1/2 = 8/16. Three rational numbers between them are 5/16, 6/16 (3/8), and 7/16.',
+                aHi: 'हर समान करने पर: 1/4 = 4/16 तथा 1/2 = 8/16। अतः मध्य तीन परिमेय संख्याएँ हैं: 5/16, 6/16 (3/8), 7/16।',
+                marks: 3
+              },
+              {
+                qEn: 'Write the additive and multiplicative inverse of -5/9.',
+                qHi: '-5/9 का योज्य प्रतिलोम तथा गुणात्मक प्रतिलोम लिखिए।',
+                aEn: 'Additive inverse = 5/9. Multiplicative inverse = -9/5.',
+                aHi: 'योज्य प्रतिलोम = 5/9 तथा गुणात्मक प्रतिलोम = -9/5।',
+                marks: 2
+              }
+            ],
+            mcqs: [
+              {
+                q: 'What is the multiplicative identity for rational numbers?',
+                opts: ['0', '1', '-1', 'None'],
+                correct: 1,
+                exp: 'Multiplying any rational number by 1 yields the same number.'
+              },
+              {
+                q: 'How many rational numbers lie between any two rational numbers?',
+                opts: ['Only 1', '10', 'Infinitely many', 'Zero'],
+                correct: 2,
+                exp: 'Between any two rational numbers, there are infinitely many rational numbers.'
+              }
+            ]
+          },
+          {
+            id: 'maths-ch-2',
+            number: 2,
+            titleEn: 'Linear Equations in One Variable',
+            titleHi: 'एक चर वाले रैखिक समीकरण',
+            marksWeightage: 7,
+            pagesCount: 22,
+            summary: 'Solving linear equations with variable on one or both sides, transposition technique, word problems based on ages and geometry.',
+            summaryHi: 'एक चर वाले रैखिक समीकरणों को हल करना, पक्षांतरण विधि, आयु, संख्या एवं ज्यामिति पर आधारित अनुप्रयोग।',
+            keyPoints: [
+              'A linear equation has variable power as 1.',
+              'Transposition changes the sign of a term across equal sign.'
+            ],
+            questions: [
+              {
+                qEn: 'Solve: 5x + 9 = 5 + 3x.',
+                qHi: 'समीकरण हल कीजिए: 5x + 9 = 5 + 3x.',
+                aEn: '5x - 3x = 5 - 9 => 2x = -4 => x = -2.',
+                aHi: '5x - 3x = 5 - 9 => 2x = -4 => x = -2।',
+                marks: 2
+              }
+            ],
+            mcqs: [
+              {
+                q: 'If 2x - 3 = 7, then x equals:',
+                opts: ['2', '5', '7', '10'],
+                correct: 1,
+                exp: '2x = 10 => x = 5.'
+              }
+            ]
+          },
+          {
+            id: 'maths-ch-3',
+            number: 3,
+            titleEn: 'Understanding Quadrilaterals',
+            titleHi: 'चतुर्भुजों को समझना',
+            marksWeightage: 6,
+            pagesCount: 20,
+            summary: 'Angle sum property of polygons, regular polygons, properties of parallelograms, rhombus, rectangle, and square.',
+            summaryHi: 'बहुभुजों के अंतः व बाह्य कोणों का योग, समांतर चतुर्भुज, समचतुर्भुज, आयत और वर्ग की विशेषताएँ।',
+            keyPoints: [
+              'Sum of exterior angles of any polygon is always 360°.',
+              'Sum of interior angles of n-sided polygon = (n-2) * 180°.'
+            ],
+            questions: [
+              {
+                qEn: 'How many sides does a regular polygon have if exterior angle is 24°?',
+                qHi: 'एक सम बहुभुज की कितनी भुजाएँ होंगी यदि प्रत्येक बाह्य कोण 24° हो?',
+                aEn: 'Number of sides = 360° / 24° = 15 sides.',
+                aHi: 'भुजाओं की संख्या = 360° / 24° = 15 भुजाएँ।',
+                marks: 2
+              }
+            ],
+            mcqs: [
+              {
+                q: 'Diagonals of a rhombus bisect each other at:',
+                opts: ['60°', '90°', '45°', '180°'],
+                correct: 1,
+                exp: 'Rhombus diagonals bisect each other perpendicularly at 90 degrees.'
+              }
+            ]
+          },
+          {
+            id: 'maths-ch-4',
+            number: 4,
+            titleEn: 'Data Handling',
+            titleHi: 'आँकड़ों का प्रबंधन',
+            marksWeightage: 6,
+            pagesCount: 18,
+            summary: 'Frequency distribution tables, histograms, pie charts (circle graphs), and probability basics.',
+            summaryHi: 'बारंबारता सारणी, आयतचित्र, वृत्त आलेख (पाई चार्ट) एवं प्रायिकता।',
+            keyPoints: [
+              'Total central angle in a pie chart is 360°.',
+              'Probability = Favorable outcomes / Total outcomes.'
+            ],
+            questions: [
+              {
+                qEn: 'A die is thrown once. Find the probability of getting a prime number.',
+                qHi: 'एक पासे को फेंकने पर अभाज्य संख्या आने की प्रायिकता क्या है?',
+                aEn: 'Primes = {2, 3, 5} (3 outcomes). Total = 6. Probability = 3/6 = 1/2.',
+                aHi: 'अभाज्य संख्याएँ = {2, 3, 5}। कुल = 6। प्रायिकता = 3/6 = 1/2।',
+                marks: 2
+              }
+            ],
+            mcqs: [
+              {
+                q: 'Central angle of 25% component in pie chart is:',
+                opts: ['90°', '45°', '180°', '60°'],
+                correct: 0,
+                exp: '25% of 360° = 90°.'
+              }
+            ]
+          },
+          {
+            id: 'maths-ch-5',
+            number: 5,
+            titleEn: 'Squares and Square Roots',
+            titleHi: 'वर्ग और वर्गमूल',
+            marksWeightage: 7,
+            pagesCount: 20,
+            summary: 'Pythagorean triplets, prime factorisation and long division methods for finding square roots.',
+            summaryHi: 'पूर्ण वर्ग संख्याओं के गुण, पाइथागोरस त्रिक, अभाज्य गुणनखंडन एवं भाग विधि द्वारा वर्गमूल।',
+            keyPoints: [
+              'Numbers ending in 2, 3, 7, 8 are never perfect squares.',
+              '(2m, m²-1, m²+1) forms a Pythagorean triplet.'
+            ],
+            questions: [
+              {
+                qEn: 'Find the smallest number by which 252 must be multiplied to make it a perfect square.',
+                qHi: '252 को किस सबसे छोटी संख्या से गुणा करें कि वह पूर्ण वर्ग बन जाए?',
+                aEn: '252 = 2*2*3*3*7. Multiply by 7 to get 1764 (42²).',
+                aHi: '252 = 2×2×3×3×7। 7 का युग्म बनाने हेतु 7 से गुणा करेंगे।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'How many non-square numbers lie between 9² and 10²?',
+                opts: ['18', '19', '20', '17'],
+                correct: 0,
+                exp: 'Between n² and (n+1)², there are 2n numbers: 2*9 = 18.'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'science',
+        nameEn: 'Science',
+        nameHi: 'विज्ञान',
+        color: 'blue',
+        bookName: 'विज्ञान कक्षा 8 (Science)',
+        boardMarks: 80,
+        chapters: [
+          {
+            id: 'sci-ch-1',
+            number: 1,
+            titleEn: 'Crop Production and Management',
+            titleHi: 'फसल उत्पादन एवं प्रबंध',
+            marksWeightage: 6,
+            pagesCount: 22,
+            summary: 'Soil preparation, sowing, manures vs fertilisers, modern irrigation (drip and sprinkler), harvesting, and storage.',
+            summaryHi: 'कृषि पद्धतियाँ: जुताई, बुआई, खाद व उर्वरक, आधुनिक सिंचाई (ड्रिप व छिड़काव तंत्र), कटाई एवं भंडारण।',
+            keyPoints: [
+              'Kharif: rainy season (paddy, maize). Rabi: winter season (wheat, gram).',
+              'Drip irrigation drops water directly at roots, saving maximum water.'
+            ],
+            questions: [
+              {
+                qEn: 'Differentiate between manure and fertiliser.',
+                qHi: 'खाद और उर्वरक में मुख्य अंतर लिखिए।',
+                aEn: 'Manure is natural organic substance rich in humus. Fertiliser is an inorganic chemical manufactured in factories.',
+                aHi: 'खाद प्राकृतिक कार्बनिक पदार्थ है जो ह्यूमस प्रदान करती है। उर्वरक फैक्ट्रियों में निर्मित अकार्बनिक लवण है।',
+                marks: 4
+              }
+            ],
+            mcqs: [
+              {
+                q: 'Which of the following is a Kharif crop?',
+                opts: ['Wheat', 'Mustard', 'Paddy', 'Gram'],
+                correct: 2,
+                exp: 'Paddy is grown in the monsoon season.'
+              }
+            ]
+          },
+          {
+            id: 'sci-ch-2',
+            number: 2,
+            titleEn: 'Microorganisms: Friend and Foe',
+            titleHi: 'सूक्ष्मजीव: मित्र एवं शत्रु',
+            marksWeightage: 6,
+            pagesCount: 20,
+            summary: 'Classification of microbes, useful microorganisms, communicable diseases, food preservation, and nitrogen cycle.',
+            summaryHi: 'सूक्ष्मजीवों के प्रकार, लाभदायक सूक्ष्मजीव, संक्रामक रोग, खाद्य परिरक्षण एवं नाइट्रोजन चक्र।',
+            keyPoints: [
+              'Lactobacillus turns milk into curd.',
+              'Yeast produces CO2 during fermentation, making dough fluffy.'
+            ],
+            questions: [
+              {
+                qEn: 'Explain how Rhizobium bacteria helps soil fertility.',
+                qHi: 'राइजोबियम जीवाणु भूमि की उर्वरता कैसे बढ़ाता है?',
+                aEn: 'Rhizobium resides in root nodules of leguminous plants and fixes atmospheric nitrogen into usable nitrates.',
+                aHi: 'राइजोबियम दलहनी पौधों की जड़ों में रहकर वायुमंडलीय नाइट्रोजन का स्थिरीकरण करता है।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'Carrier of malaria-causing protozoan is:',
+                opts: ['Female Anopheles mosquito', 'Housefly', 'Butterfly', 'Cockroach'],
+                correct: 0,
+                exp: 'Female Anopheles mosquito carries the Plasmodium parasite.'
+              }
+            ]
+          },
+          {
+            id: 'sci-ch-3',
+            number: 3,
+            titleEn: 'Coal and Petroleum',
+            titleHi: 'कोयला और पेट्रोलियम',
+            marksWeightage: 5,
+            pagesCount: 16,
+            summary: 'Fossil fuel formation, carbonisation, refining of petroleum, fractional distillation, and PCRA conservation tips.',
+            summaryHi: 'जीवाश्म ईंधन का निर्माण, कार्बनीकरण, पेट्रोलियम परिष्करण एवं संरक्षण के उपाय।',
+            keyPoints: [
+              'Carbonisation is slow conversion of dead vegetation into coal.',
+              'Petroleum is called Black Gold due to its high commercial value.'
+            ],
+            questions: [
+              {
+                qEn: 'Why is petroleum called Black Gold?',
+                qHi: 'पेट्रोलियम को काला सोना क्यों कहा जाता है?',
+                aEn: 'Because of its great commercial and industrial value as fuel, lubricants, and chemicals.',
+                aHi: 'इसके अत्यधिक व्यापारिक महत्व एवं विविध ईंधनों के निर्माण के कारण इसे काला सोना कहते हैं।',
+                marks: 2
+              }
+            ],
+            mcqs: [
+              {
+                q: 'Which is the cleanest fossil fuel?',
+                opts: ['Coal', 'Diesel', 'CNG', 'Petrol'],
+                correct: 2,
+                exp: 'CNG burns cleanly with negligible residues.'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'sst',
+        nameEn: 'Social Science',
+        nameHi: 'सामाजिक विज्ञान',
+        color: 'amber',
+        bookName: 'सामाजिक विज्ञान कक्षा 8 (Social Science)',
+        boardMarks: 80,
+        chapters: [
+          {
+            id: 'sst-ch-1',
+            number: 1,
+            titleEn: 'From Trade to Territory (History)',
+            titleHi: 'व्यापार से साम्राज्य तक (इतिहास)',
+            marksWeightage: 7,
+            pagesCount: 20,
+            summary: 'East India Company establishment in India, Battle of Plassey (1757), Battle of Buxar, Subsidiary Alliance, and Doctrine of Lapse.',
+            summaryHi: 'ईस्ट इंडिया कंपनी का भारत आगमन, प्लासी का युद्ध (1757), सहायक संधि एवं लॉर्ड डलहौजी की विलय नीति।',
+            keyPoints: [
+              'Battle of Plassey 1757 marked beginning of British political rule.',
+              'Lord Dalhousie annexed states having no natural male heir.'
+            ],
+            questions: [
+              {
+                qEn: 'What was the Doctrine of Lapse?',
+                qHi: 'लॉर्ड डलहौजी की विलय नीति (हड़प नीति) क्या थी?',
+                aEn: 'If an Indian ruler died without a natural male heir, his kingdom was annexed to British territory.',
+                aHi: 'यदि किसी राजा की मृत्यु बिना प्राकृतिक पुरुष वारिस के होती थी, तो उसकी रियासत कंपनी में मिला ली जाती थी।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'The Battle of Plassey was fought in:',
+                opts: ['1757', '1764', '1857', '1947'],
+                correct: 0,
+                exp: 'Fought on 23 June 1757.'
+              }
+            ]
+          },
+          {
+            id: 'sst-ch-2',
+            number: 2,
+            titleEn: 'When People Rebel 1857 and After',
+            titleHi: 'जब जनता बगावत करती है: 1857 और उसके बाद',
+            marksWeightage: 8,
+            pagesCount: 22,
+            summary: 'Causes of 1857 revolt, Bahadur Shah Zafar leadership, Mangal Pandey, Rani Lakshmibai, and British Crown takeover.',
+            summaryHi: '1857 के प्रथम स्वतंत्रता संग्राम के कारण, मंगल पांडे, रानी लक्ष्मीबाई, तात्या टोपे एवं क्रांति के परिणाम।',
+            keyPoints: [
+              'Mangal Pandey revolted at Barrackpore in March 1857.',
+              'Power transferred from East India Company to British Crown in 1858.'
+            ],
+            questions: [
+              {
+                qEn: 'Give two main causes of the Revolt of 1857.',
+                qHi: '1857 की क्रांति के दो मुख्य कारण लिखिए।',
+                aEn: '1. Introduction of greased cartridges hurting religious sentiments. 2. Heavy taxation and annexation of princely states.',
+                aHi: '1. चर्बी वाले कारतूसों का प्रयोग। 2. भारी लगान एवं रियासतों का विलय।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'Who was proclaimed leader of the 1857 revolt?',
+                opts: ['Nana Saheb', 'Bahadur Shah Zafar', 'Kunwar Singh', 'Tantia Tope'],
+                correct: 1,
+                exp: 'Sepoys declared Mughal Emperor Bahadur Shah Zafar as their leader.'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'english',
+        nameEn: 'English',
+        nameHi: 'अंग्रेजी',
+        color: 'indigo',
+        bookName: 'English Class 8 (Honeydew & It So Happened)',
+        boardMarks: 80,
+        chapters: [
+          {
+            id: 'eng-ch-1',
+            number: 1,
+            titleEn: 'The Best Christmas Present in the World',
+            titleHi: 'द बेस्ट क्रिसमस प्रेजेंट इन द वर्ल्ड',
+            marksWeightage: 6,
+            pagesCount: 16,
+            summary: 'World War I Christmas truce between British and German troops, Jim Macpherson letter to Connie, and narrator delivering it to 101-year-old Connie.',
+            summaryHi: 'प्रथम विश्व युद्ध में नो-मैन्स लैंड में क्रिसमस मनाने की मार्मिक कहानी और जिम का कोनी को लिखा पत्र।',
+            keyPoints: [
+              'Soldiers celebrated Christmas and played football in No Man\'s Land.',
+              'Connie mistook narrator for Jim returning home.'
+            ],
+            questions: [
+              {
+                qEn: 'Why did the author go to Bridport?',
+                qHi: 'लेखक ब्रिडपोर्ट क्यों गया था?',
+                aEn: 'To meet Mrs. Connie Macpherson and return her husband Jim\'s precious letter.',
+                aHi: 'मिसेज कोनी मैकफर्सन को उनके पति जिम का पत्र सौंपने के लिए।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'What game did British and German soldiers play on Christmas?',
+                opts: ['Cricket', 'Football', 'Rugby', 'Tennis'],
+                correct: 1,
+                exp: 'They played football (soccer) together.'
+              }
+            ]
+          },
+          {
+            id: 'eng-ch-2',
+            number: 2,
+            titleEn: 'The Tsunami',
+            titleHi: 'द सुनामी',
+            marksWeightage: 6,
+            pagesCount: 16,
+            summary: 'True accounts from 26 Dec 2004 tsunami in Andaman & Nicobar and Thailand, and British girl Tilly Smith saving lives on Phuket beach.',
+            summaryHi: '2004 की सुनामी की घटनाएँ और 10 वर्षीय टिली स्मिथ की सूझबूझ जिसने सैकड़ों जानें बचाईं।',
+            keyPoints: [
+              'Tilly recalled geography lesson signs: receding sea and bubbling foam.',
+              'Animals showed early sixth sense avoidance.'
+            ],
+            questions: [
+              {
+                qEn: 'How did Tilly Smith save lives on Phuket beach?',
+                qHi: 'टिली स्मिथ ने फुकेत बीच पर लोगों की जान कैसे बचाई?',
+                aEn: 'She recognized the warning signs of tsunami from her geography class and warned everyone to leave.',
+                aHi: 'उसने समुद्र पीछे हटने के संकेतों को पहचानकर सबको तुरंत भागने को कहा।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'When did the Indian Ocean tsunami strike?',
+                opts: ['26 Dec 2004', '15 Aug 2005', '26 Jan 2001', '1 Jan 2000'],
+                correct: 0,
+                exp: 'It occurred on 26 December 2004.'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'hindi',
+        nameEn: 'Hindi',
+        nameHi: 'हिंदी',
+        color: 'rose',
+        bookName: 'हिंदी कक्षा 8 (वसंत भाग-3)',
+        boardMarks: 80,
+        chapters: [
+          {
+            id: 'hin-ch-1',
+            number: 1,
+            titleEn: 'Dhwani (Nirala)',
+            titleHi: 'ध्वनि (सूर्यकांत त्रिपाठी "निराला")',
+            marksWeightage: 6,
+            pagesCount: 14,
+            summary: 'Optimistic poem awakening youth with zeal, declaring life\'s spring has just arrived.',
+            summaryHi: 'निराशा त्यागकर नव-उत्साह का संचार करने वाली कविता। कवि का विश्वास है कि उसका अंत अभी नहीं हो सकता।',
+            keyPoints: [
+              'कलियाँ आलस्य में डूबे युवाओं का प्रतीक हैं।',
+              'कवि अपने कोमल स्पर्श से समाज में चेतना लाएगा।'
+            ],
+            questions: [
+              {
+                qEn: 'Why does the poet believe his end will not come now?',
+                qHi: 'कवि को ऐसा विश्वास क्यों है कि उसका अंत अभी नहीं होगा?',
+                aEn: 'Because youthful spring energy has just entered his life to inspire society.',
+                aHi: 'क्योंकि उसके जीवन में अभी वसंत रूपी नव-उमंग आई है और उसे बहुत से कार्य करने हैं।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: '"ध्वनि" कविता के रचयिता कौन हैं?',
+                opts: ['सूर्यकांत त्रिपाठी "निराला"', 'दिनकर', 'महादेवी वर्मा', 'पंत'],
+                correct: 0,
+                exp: 'यह प्रसिद्ध कविता महाकवि निराला की है।'
+              }
+            ]
+          },
+          {
+            id: 'hin-ch-2',
+            number: 2,
+            titleEn: 'Laakh Ki Choodiyan',
+            titleHi: 'लाख की चूड़ियाँ (कामतानाथ)',
+            marksWeightage: 7,
+            pagesCount: 18,
+            summary: 'Story of Badlu, a traditional artisan, and the plight of cottage industries due to machine age.',
+            summaryHi: 'बदलू काका की कहानी, मशीनी युग से हस्तशिल्प पर संकट किंतु बदलू का स्वाभिमान।',
+            keyPoints: [
+              'मशीनी युग से पारंपरिक कारीगरों की आजीविका प्रभावित हुई।',
+              'बदलू वस्तु विनिमय से चूड़ियाँ बेचता था।'
+            ],
+            questions: [
+              {
+                qEn: 'What was Badlu\'s inner sorrow?',
+                qHi: 'बदलू के मन में क्या व्यथा थी?',
+                aEn: 'His ancestral lacquer craft was destroyed by cheap machine-made glass bangles.',
+                aHi: 'मशीनी युग से लाख की चूड़ियों की माँग बंद हो गई और उसका पैतृक धंधा ठप हो गया।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: 'बदलू किस जाति से था?',
+                opts: ['बढ़ई', 'मनिहार', 'लोहार', 'सुनार'],
+                correct: 1,
+                exp: 'बदलू मनिहार (चूड़ियाँ बनाने वाला) था।'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'sanskrit',
+        nameEn: 'Sanskrit',
+        nameHi: 'संस्कृत',
+        color: 'teal',
+        bookName: 'संस्कृत कक्षा 8 (रुचिरा तृतीयो भागः)',
+        boardMarks: 80,
+        chapters: [
+          {
+            id: 'san-ch-1',
+            number: 1,
+            titleEn: 'Subhashitani (Moral Verses)',
+            titleHi: 'सुभाषितानि (सुभाषित श्लोक)',
+            marksWeightage: 7,
+            pagesCount: 14,
+            summary: 'Moral verses on virtues, sweet speech, perseverance, and genuine wisdom.',
+            summaryHi: 'गुण, सत्संगति, मधुर वाणी और परिश्रम के महत्व को दर्शाने वाले नीतिपरक श्लोक।',
+            keyPoints: [
+              'गुणा गुणज्ञेषु गुणा भवन्ति, ते निर्गुणं प्राप्य भवन्ति दोषाः।',
+              'साहित्यसंगीतकलाविहीनः साक्षात्पशुः पुच्छविषाणहीनः।'
+            ],
+            questions: [
+              {
+                qEn: 'Explain "गुणा गुणज्ञेषु गुणा भवन्ति"।',
+                qHi: '"गुणा गुणज्ञेषु गुणा भवन्ति" का भावार्थ स्पष्ट कीजिए।',
+                aEn: 'Virtues remain virtues in appreciative company, but turn into vices with unworthy persons.',
+                aHi: 'गुण गुणियों के पास रहकर ही सच्चे गुण कहलाते हैं; निर्गुणी के पास पहुँचकर दोष बन जाते हैं।',
+                marks: 3
+              }
+            ],
+            mcqs: [
+              {
+                q: '"मधुमक्षिका किं जनयति?" (मधुमक्खी क्या बनाती है?)',
+                opts: ['माधुर्यमेव (शहद)', 'विषम्', 'दुग्धम्', 'जलम्'],
+                correct: 0,
+                exp: 'मधुमक्खी केवल मधुर शहद बनाती है।'
+              }
+            ]
+          }
+        ]
+      }
+    ];
+
+    const FAQS = [
+      {
+        q: 'What is Sanjiv Passbook Class 8 and why is it recommended?',
+        a: 'Sanjiv Passbook (संजीव पासबुक) is the foremost study guide for Class 8 students under RBSE and CBSE curricula, featuring line-by-line textbook solutions, grammar, model papers, and board blueprints in Hindi and English mediums.'
+      },
+      {
+        q: 'How can I download Sanjiv Passbook Class 8 PDF for free?',
+        a: 'Click "Download PDF" on any chapter card or inside the reader modal. Our built-in generator immediately produces an authentic, printable PDF study package directly in your browser with no login or payment required.'
+      },
+      {
+        q: 'Can I upload and attach my own scanned PDFs?',
+        a: 'Yes! Click "Upload PDF", select your subject and chapter, and choose your PDF file. It will be saved into browser storage (IndexedDB) and attached directly to that chapter for instant viewing and downloading.'
+      },
+      {
+        q: 'Is this content updated for the 2025–2026 Academic Session?',
+        a: 'Yes, all syllabus allocations, chapter contents, and model questions follow the rationalized NCERT curriculum and RBSE 2025–2026 examination scheme (80 marks theory + 20 marks sessional).'
+      }
+    ];
+
+    // STATE VARIABLES
+    let currentSubjectId = 'maths';
+    let currentMedium = 'both';
+    let currentSearch = '';
+    let currentReaderChapter = null;
+    let currentReaderTab = 'notes';
+    let userUploadedPdfs = {}; // keyed by chapterId or subjectId
+
+    // INDEXEDDB STORAGE
+    const DB_NAME = 'SanjivClass8SingleHtmlDB';
+    let dbInstance = null;
+
+    function initIndexedDb() {
+      const request = indexedDB.open(DB_NAME, 1);
+      request.onupgradeneeded = function (e) {
+        const db = e.target.result;
+        if (!db.objectStoreNames.contains('pdfs')) {
+          db.createObjectStore('pdfs', { keyPath: 'id' });
+        }
+      };
+      request.onsuccess = function (e) {
+        dbInstance = e.target.result;
+        loadStoredPdfs();
+      };
+    }
+
+    function loadStoredPdfs() {
+      if (!dbInstance) return;
+      const tx = dbInstance.transaction('pdfs', 'readonly');
+      const store = tx.objectStore('pdfs');
+      const req = store.getAll();
+      req.onsuccess = function () {
+        const records = req.result || [];
+        userUploadedPdfs = {};
+        records.forEach(r => {
+          userUploadedPdfs[r.id] = r;
+          if (r.chapterId) userUploadedPdfs[r.chapterId] = r;
+        });
+        updatePdfBadgeCounts(records);
+        renderSubjectTabs();
+        renderChapters();
+      };
+    }
+
+    function savePdfToDb(record) {
+      if (!dbInstance) return;
+      const tx = dbInstance.transaction('pdfs', 'readwrite');
+      const store = tx.objectStore('pdfs');
+      store.put(record);
+      tx.oncomplete = function () {
+        loadStoredPdfs();
+      };
+    }
+
+    function deletePdfFromDb(id) {
+      if (!dbInstance) return;
+      const tx = dbInstance.transaction('pdfs', 'readwrite');
+      const store = tx.objectStore('pdfs');
+      store.delete(id);
+      tx.oncomplete = function () {
+        loadStoredPdfs();
+      };
+    }
+
+    function updatePdfBadgeCounts(records) {
+      const count = records.length;
+      const badge = document.getElementById('header-pdf-count');
+      const countLabel = document.getElementById('stored-count-label');
+      if (count > 0) {
+        badge.innerText = count;
+        badge.classList.remove('hidden');
+      } else {
+        badge.classList.add('hidden');
+      }
+      if (countLabel) countLabel.innerText = count;
+
+      // Render stored list in modal
+      const listEl = document.getElementById('stored-pdfs-list');
+      if (!listEl) return;
+      if (records.length === 0) {
+        listEl.innerHTML = '<p class="text-xs text-slate-400 italic bg-slate-50 p-3 rounded-lg border border-slate-100">No custom PDFs uploaded yet. Upload above whenever ready!</p>';
+        return;
+      }
+
+      listEl.innerHTML = records.map(r => `
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-between gap-3 text-xs">
+          <div class="truncate">
+            <p class="font-semibold text-slate-800 truncate">${r.fileName}</p>
+            <p class="text-slate-500 text-[11px] truncate">${r.subjectName || ''} · ${(r.fileSize / 1024 / 1024).toFixed(2)} MB</p>
+          </div>
+          <div class="flex items-center space-x-2 shrink-0">
+            <button onclick="downloadUploadedRecord('${r.id}')" class="p-1.5 text-slate-600 hover:text-emerald-700 bg-white rounded border border-slate-200 cursor-pointer" title="Download">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </button>
+            <button onclick="deletePdfFromDb('${r.id}')" class="p-1.5 text-slate-400 hover:text-rose-600 bg-white rounded border border-slate-200 cursor-pointer" title="Delete">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // RENDER FUNCTIONS
+    function renderSubjectTabs() {
+      const grid = document.getElementById('subject-tabs-grid');
+      grid.innerHTML = SUBJECTS.map(subj => {
+        const isSelected = subj.id === currentSubjectId;
+        const attachedCount = Object.values(userUploadedPdfs).filter(p => p.subjectId === subj.id).length;
+
+        return `
+          <button
+            onclick="selectSubject('${subj.id}')"
+            class="text-left p-3.5 sm:p-4 rounded-xl border transition-all relative flex flex-col justify-between cursor-pointer ${
+              isSelected
+                ? 'bg-white border-emerald-600 shadow-md ring-2 ring-emerald-600/20'
+                : 'bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50/80 shadow-xs'
+            }"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <div class="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm ${isSelected ? 'bg-emerald-700 text-white' : 'bg-slate-100 text-slate-700'}">
+                  ${subj.nameEn[0]}
+                </div>
+                ${attachedCount > 0 ? `<span class="text-[10px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded">${attachedCount} PDF</span>` : ''}
+              </div>
+              <div class="font-bold text-sm sm:text-base text-slate-900 line-clamp-1">${subj.nameEn}</div>
+              <div class="text-xs font-medium text-slate-500 line-clamp-1 mt-0.5">${subj.nameHi}</div>
+            </div>
+            <div class="mt-3 pt-2 border-t border-slate-100 text-[11px] text-slate-500 flex items-center justify-between">
+              <span>${subj.chapters.length} Ch</span>
+              <span aria-hidden="true" class="text-slate-300">·</span>
+              <span>${subj.boardMarks} Mks</span>
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderChapters() {
+      const container = document.getElementById('chapters-container');
+      const subj = SUBJECTS.find(s => s.id === currentSubjectId) || SUBJECTS[0];
+
+      // Filter by search query
+      const filtered = subj.chapters.filter(ch => {
+        if (!currentSearch) return true;
+        const q = currentSearch.toLowerCase();
+        return (
+          ch.titleEn.toLowerCase().includes(q) ||
+          ch.titleHi.toLowerCase().includes(q) ||
+          ch.summary.toLowerCase().includes(q) ||
+          ch.summaryHi.toLowerCase().includes(q) ||
+          subj.nameEn.toLowerCase().includes(q)
+        );
+      });
+
+      let html = `
+        <div class="bg-white rounded-xl border border-slate-200 p-5 sm:p-6 mb-6 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
+              <span>${subj.bookName}</span>
+              <span aria-hidden="true">·</span>
+              <span>Chapters: ${subj.chapters.length}</span>
+              <span aria-hidden="true">·</span>
+              <span>Annual Board Marks: ${subj.boardMarks}</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+              ${subj.nameEn} (${subj.nameHi}) - Sanjiv Passbook Solutions
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">
+              Comprehensive chapter solutions, formulas, model questions, and revision notes.
+            </p>
+          </div>
+          <button onclick="openUploadModal('${subj.id}')" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-3 py-2 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition-colors cursor-pointer shrink-0">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+            <span>Upload ${subj.nameEn} PDF</span>
+          </button>
+        </div>
+      `;
+
+      if (filtered.length === 0) {
+        html += `
+          <div class="bg-white border border-slate-200 rounded-xl p-10 text-center text-slate-500">
+            <p class="text-base font-semibold text-slate-700">No chapters found matching "${currentSearch}"</p>
+            <p class="text-xs text-slate-400 mt-1">Try clearing your search query.</p>
+          </div>
+        `;
+      } else {
+        html += `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">`;
+        filtered.forEach(ch => {
+          const stored = userUploadedPdfs[ch.id];
+          const title = currentMedium === 'hi' ? ch.titleHi : ch.titleEn;
+          const subtitle = currentMedium === 'both' ? ch.titleHi : '';
+          const summary = currentMedium === 'hi' ? ch.summaryHi : ch.summary;
+
+          html += `
+            <div class="bg-white border border-slate-200 hover:border-emerald-300 rounded-xl p-5 transition-all shadow-xs hover:shadow-md flex flex-col justify-between group">
+              <div>
+                <div class="flex items-center justify-between text-xs text-slate-500 font-medium mb-2">
+                  <span class="font-semibold text-emerald-700">Chapter ${ch.number}</span>
+                  <div class="flex items-center space-x-1.5 text-[11px] text-slate-400">
+                    <span>${ch.marksWeightage} Marks</span>
+                    <span aria-hidden="true">·</span>
+                    <span>${ch.pagesCount} Pages</span>
+                  </div>
+                </div>
+
+                <h4 class="text-base font-bold text-slate-900 group-hover:text-emerald-800 transition-colors leading-snug">
+                  ${title}
+                </h4>
+                ${subtitle ? `<p class="text-xs font-medium text-slate-500 mt-0.5">${subtitle}</p>` : ''}
+
+                <p class="text-xs text-slate-600 mt-2.5 line-clamp-3 leading-relaxed">
+                  ${summary}
+                </p>
+
+                ${stored ? `
+                  <div class="mt-3 py-1.5 px-2 bg-emerald-50 border border-emerald-200 rounded-md flex items-center justify-between text-[11px] text-emerald-900">
+                    <span class="truncate font-medium">${stored.fileName}</span>
+                    <span class="text-[10px] text-emerald-700 font-mono shrink-0 ml-1">${(stored.fileSize / 1024 / 1024).toFixed(1)} MB</span>
+                  </div>
+                ` : ''}
+              </div>
+
+              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                <button onclick="openReaderModal('${ch.id}')" class="inline-flex items-center space-x-1.5 text-xs font-semibold text-slate-700 hover:text-emerald-700 py-1.5 px-2 rounded hover:bg-slate-50 transition-colors cursor-pointer">
+                  <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                  <span>Read Notes</span>
+                </button>
+
+                <div class="flex items-center space-x-1.5">
+                  <button onclick="openUploadModal('${subj.id}', '${ch.id}')" class="p-1.5 text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 rounded transition-colors cursor-pointer" title="Attach PDF">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                  </button>
+                  <button onclick="downloadChapterPdfDirect('${subj.id}', '${ch.id}')" class="inline-flex items-center space-x-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors shadow-xs cursor-pointer">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    <span>${stored ? 'Get PDF' : 'Download'}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+        html += `</div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function renderFaqs() {
+      const container = document.getElementById('faq-list');
+      container.innerHTML = FAQS.map((faq, index) => `
+        <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <button onclick="toggleFaq(${index})" class="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors cursor-pointer">
+            <span class="font-semibold text-sm sm:text-base text-slate-900">${faq.q}</span>
+            <div class="p-1 rounded bg-slate-100 text-slate-500 shrink-0">
+              <svg id="faq-icon-${index}" class="w-4 h-4 transition-transform ${index === 0 ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div id="faq-content-${index}" class="${index === 0 ? '' : 'hidden'} px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/50">
+            ${faq.a}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleFaq(index) {
+      const el = document.getElementById(`faq-content-${index}`);
+      const icon = document.getElementById(`faq-icon-${index}`);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        el.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // CONTROLS & INTERACTIONS
+    function selectSubject(id) {
+      currentSubjectId = id;
+      renderSubjectTabs();
+      renderChapters();
+    }
+
+    function setMedium(med) {
+      currentMedium = med;
+      ['both', 'hi', 'en'].forEach(m => {
+        const btn = document.getElementById(`med-btn-${m}`);
+        if (m === med) {
+          btn.className = 'px-3 py-1.5 rounded-md bg-white text-slate-900 shadow-sm transition-colors';
+        } else {
+          btn.className = 'px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 transition-colors';
+        }
+      });
+      renderChapters();
+    }
+
+    function handleSearch(val) {
+      currentSearch = val.trim();
+      const clearBtn = document.getElementById('clear-search-btn');
+      if (currentSearch) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      renderChapters();
+    }
+
+    function clearSearch() {
+      document.getElementById('search-input').value = '';
+      handleSearch('');
+    }
+
+    // READER MODAL LOGIC
+    function openReaderModal(chId) {
+      const subj = SUBJECTS.find(s => s.id === currentSubjectId);
+      const ch = subj?.chapters.find(c => c.id === chId);
+      if (!ch) return;
+
+      currentReaderChapter = ch;
+      document.getElementById('reader-sub-title').innerText = subj.nameEn;
+      document.getElementById('reader-ch-num').innerText = `Chapter ${ch.number}`;
+      document.getElementById('reader-marks').innerText = `${ch.marksWeightage} Marks`;
+      document.getElementById('reader-heading').innerText = `${ch.titleEn} (${ch.titleHi})`;
+
+      const stored = userUploadedPdfs[ch.id];
+      const tabPdfBtn = document.getElementById('tab-btn-pdf');
+      if (stored) {
+        tabPdfBtn.classList.remove('hidden');
+        setReaderTab('pdf');
+      } else {
+        tabPdfBtn.classList.add('hidden');
+        setReaderTab('notes');
+      }
+
+      const modal = document.getElementById('reader-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeReaderModal() {
+      const modal = document.getElementById('reader-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      currentReaderChapter = null;
+    }
+
+    function setReaderTab(tab) {
+      currentReaderTab = tab;
+      ['notes', 'solutions', 'mcqs', 'pdf'].forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        if (btn) {
+          if (t === tab) {
+            btn.className = 'px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-white cursor-pointer';
+          } else {
+            btn.className = 'px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-600 hover:bg-slate-100 cursor-pointer';
+          }
+        }
+      });
+      renderReaderContent();
+    }
+
+    function renderReaderContent() {
+      const body = document.getElementById('reader-body');
+      const ch = currentReaderChapter;
+      if (!ch) return;
+
+      if (currentReaderTab === 'pdf') {
+        const stored = userUploadedPdfs[ch.id];
+        if (stored) {
+          const blobUrl = URL.createObjectURL(stored.blob);
+          body.innerHTML = `
+            <div class="h-full flex flex-col">
+              <div class="mb-3 flex items-center justify-between text-xs text-slate-500">
+                <span class="font-semibold text-slate-800">Attached: ${stored.fileName}</span>
+                <button onclick="downloadUploadedRecord('${stored.id}')" class="text-emerald-700 font-semibold cursor-pointer">Download File</button>
+              </div>
+              <div class="flex-1 min-h-[450px] border border-slate-200 rounded-xl overflow-hidden bg-slate-100">
+                <iframe src="${blobUrl}" class="w-full h-full min-h-[450px]"></iframe>
+              </div>
+            </div>
+          `;
+          return;
+        }
+      }
+
+      if (currentReaderTab === 'notes') {
+        body.innerHTML = `
+          <div class="space-y-6 max-w-3xl">
+            <div class="bg-slate-50 rounded-xl p-5 border border-slate-200">
+              <h4 class="text-xs font-bold text-emerald-800 uppercase tracking-wider mb-2">Chapter Synopsis / पाठ परिचय</h4>
+              <p class="text-sm text-slate-800 leading-relaxed font-medium">${ch.summary}</p>
+              <p class="text-sm text-slate-600 leading-relaxed mt-2 pt-2 border-t border-slate-200">${ch.summaryHi}</p>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                <span>Key Formulas & Important Points (मुख्य बिंदु एवं सूत्र)</span>
+              </h4>
+              <div class="space-y-2.5">
+                ${ch.keyPoints.map((pt, i) => `
+                  <div class="p-3.5 bg-white rounded-xl border border-slate-200 text-sm text-slate-800 flex items-start space-x-3">
+                    <span class="text-xs font-bold font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded shrink-0">[${i+1}]</span>
+                    <p>${pt}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        `;
+      } else if (currentReaderTab === 'solutions') {
+        body.innerHTML = `
+          <div class="space-y-4 max-w-3xl">
+            <p class="text-xs text-slate-500 mb-2">Solved model questions from Sanjiv Desk Work:</p>
+            ${ch.questions.map((q, idx) => `
+              <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-xs">
+                <div class="p-4 bg-slate-50/80 flex items-center justify-between border-b border-slate-100">
+                  <span class="font-bold text-sm text-slate-900">Q${idx + 1} (${q.marks} Marks): ${q.qEn}</span>
+                </div>
+                <div class="p-4 space-y-3">
+                  <div>
+                    <span class="text-[11px] font-bold text-emerald-800 uppercase tracking-wider">Model Answer (English):</span>
+                    <p class="text-sm text-slate-800 bg-slate-50 p-2.5 rounded border border-slate-100 mt-1">${q.aEn}</p>
+                  </div>
+                  <div>
+                    <span class="text-[11px] font-bold text-emerald-800 uppercase tracking-wider">आदर्श उत्तर (हिंदी माध्यम):</span>
+                    <p class="text-sm text-slate-800 bg-slate-50 p-2.5 rounded border border-slate-100 mt-1">${q.aHi}</p>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      } else if (currentReaderTab === 'mcqs') {
+        body.innerHTML = `
+          <div class="space-y-4 max-w-3xl">
+            <p class="text-xs text-slate-500 mb-2">Practice Objective Board Questions (1 Mark each):</p>
+            ${ch.mcqs.map((mcq, mIndex) => `
+              <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-xs space-y-3">
+                <div class="font-semibold text-sm text-slate-900">Q${mIndex + 1}. ${mcq.q}</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                  ${mcq.opts.map((opt, oIndex) => `
+                    <button onclick="handleOptionClick(${mIndex}, ${oIndex}, ${mcq.correct})" id="mcq-${mIndex}-${oIndex}" class="text-left p-3 rounded-xl border border-slate-200 hover:border-slate-300 text-xs sm:text-sm cursor-pointer transition-colors">
+                      <span class="font-bold mr-1.5 font-mono">(${String.fromCharCode(65 + oIndex)})</span> ${opt}
+                    </button>
+                  `).join('')}
+                </div>
+                <div id="mcq-feedback-${mIndex}" class="hidden p-3 bg-slate-50 rounded-lg text-xs text-slate-700 border border-slate-200">
+                  <span class="font-bold">Correct Option: (${String.fromCharCode(65 + mcq.correct)})</span> · ${mcq.exp}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+    }
+
+    function handleOptionClick(mIndex, oIndex, correctIndex) {
+      const feedback = document.getElementById(`mcq-feedback-${mIndex}`);
+      if (feedback) feedback.classList.remove('hidden');
+
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`mcq-${mIndex}-${i}`);
+        if (!btn) continue;
+        if (i === correctIndex) {
+          btn.className = 'text-left p-3 rounded-xl border border-emerald-500 bg-emerald-50 text-emerald-900 font-semibold text-xs sm:text-sm';
+        } else if (i === oIndex) {
+          btn.className = 'text-left p-3 rounded-xl border border-rose-300 bg-rose-50 text-rose-900 text-xs sm:text-sm';
+        }
+      }
+    }
+
+    // PDF GENERATION USING JSPDF
+    function downloadChapterPdfDirect(subjId, chId) {
+      const stored = userUploadedPdfs[chId];
+      if (stored) {
+        downloadUploadedRecord(stored.id);
+        return;
+      }
+
+      const subj = SUBJECTS.find(s => s.id === subjId);
+      const ch = subj?.chapters.find(c => c.id === chId);
+      if (!subj || !ch) return;
+
+      generateClientPdf(subj, ch);
+    }
+
+    function downloadCurrentChapterPdf() {
+      if (!currentReaderChapter) return;
+      downloadChapterPdfDirect(currentSubjectId, currentReaderChapter.id);
+    }
+
+    function generateClientPdf(subj, ch) {
+      if (!window.jspdf || !window.jspdf.jsPDF) {
+        alert('PDF generator is initializing, please try again in a second.');
+        return;
+      }
+
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+      const pageWidth = doc.internal.pageSize.getWidth();
+      const pageHeight = doc.internal.pageSize.getHeight();
+      const margin = 18;
+      const contentWidth = pageWidth - margin * 2;
+      let y = margin;
+
+      // Header block
+      doc.setFillColor(15, 76, 129); // Academic navy
+      doc.roundedRect(margin, y, contentWidth, 34, 2, 2, 'F');
+      doc.setTextColor(255, 255, 255);
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(16);
+      doc.text('SANJIV PASSBOOK CLASS 8', margin + 6, y + 12);
+      doc.setFontSize(11);
+      doc.setFont('helvetica', 'normal');
+      doc.text(`${subj.nameEn} - Chapter ${ch.number}: ${ch.titleEn}`, margin + 6, y + 21);
+      doc.setTextColor(254, 240, 138);
+      doc.text(`Official Board Marks Weightage: ${ch.marksWeightage} Marks`, margin + 6, y + 29);
+
+      y += 42;
+
+      // Chapter Summary
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(12);
+      doc.setTextColor(15, 76, 129);
+      doc.text('1. Chapter Summary & Core Concepts', margin, y);
+      y += 7;
+
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(9.5);
+      doc.setTextColor(30, 41, 59);
+      const summaryLines = doc.splitTextToSize(ch.summary, contentWidth);
+      doc.text(summaryLines, margin, y);
+      y += summaryLines.length * 5 + 6;
+
+      // Key Formulas
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(11);
+      doc.setTextColor(15, 76, 129);
+      doc.text('Key Learning Points:', margin, y);
+      y += 6;
+
+      ch.keyPoints.forEach((pt, i) => {
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(9);
+        doc.setTextColor(30, 41, 59);
+        const lines = doc.splitTextToSize(`[${i+1}] ${pt}`, contentWidth);
+        doc.text(lines, margin, y);
+        y += lines.length * 5 + 2;
+      });
+
+      y += 6;
+
+      // Solved Questions
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(12);
+      doc.setTextColor(15, 76, 129);
+      doc.text('2. Solved Board Model Questions', margin, y);
+      y += 7;
+
+      ch.questions.forEach((q, i) => {
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(9.5);
+        doc.setTextColor(15, 23, 42);
+        doc.text(`Q${i+1} (${q.marks} Marks): ${q.qEn}`, margin, y);
+        y += 5.5;
+
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(9);
+        doc.setTextColor(4, 120, 87);
+        const ansLines = doc.splitTextToSize(`Ans: ${q.aEn}`, contentWidth);
+        doc.text(ansLines, margin, y);
+        y += ansLines.length * 5 + 5;
+      });
+
+      // Footer
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(140, 150, 160);
+      doc.text('Sanjiv Passbook Class 8 Free Portal', margin, pageHeight - 10);
+      doc.text('Page 1 of 1', pageWidth - margin, pageHeight - 10, { align: 'right' });
+
+      doc.save(`Sanjiv_Passbook_Class8_Ch${ch.number}_${ch.titleEn.replace(/\s+/g, '_')}.pdf`);
+    }
+
+    function downloadUploadedRecord(id) {
+      const record = userUploadedPdfs[id];
+      if (!record) return;
+      const url = URL.createObjectURL(record.blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = record.fileName;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // UPLOAD MODAL LOGIC
+    let chosenFile = null;
+
+    function openUploadModal(subjId, chId) {
+      const modal = document.getElementById('upload-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      // Populate subject select
+      const sSelect = document.getElementById('upload-subject-select');
+      sSelect.innerHTML = SUBJECTS.map(s => `<option value="${s.id}">${s.nameEn} (${s.nameHi})</option>`).join('');
+      if (subjId) sSelect.value = subjId;
+
+      onUploadSubjectChange(sSelect.value, chId);
+      resetFileInput();
+    }
+
+    function openUploadForCurrentChapter() {
+      if (currentReaderChapter) {
+        openUploadModal(currentSubjectId, currentReaderChapter.id);
+      }
+    }
+
+    function closeUploadModal() {
+      const modal = document.getElementById('upload-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      resetFileInput();
+    }
+
+    function onUploadSubjectChange(sId, preselectChId) {
+      const subj = SUBJECTS.find(s => s.id === sId) || SUBJECTS[0];
+      const cSelect = document.getElementById('upload-chapter-select');
+      cSelect.innerHTML = `
+        <option value="">Full Book / Syllabus PDF</option>
+        ${subj.chapters.map(c => `<option value="${c.id}">Ch ${c.number}: ${c.titleEn}</option>`).join('')}
+      `;
+      if (preselectChId) cSelect.value = preselectChId;
+    }
+
+    function handleFileChosen(files) {
+      if (!files || files.length === 0) return;
+      const f = files[0];
+      if (!f.name.endsWith('.pdf') && f.type !== 'application/pdf') {
+        alert('Please choose a valid .PDF document.');
+        return;
+      }
+      chosenFile = f;
+      document.getElementById('file-drop-prompt').classList.add('hidden');
+      const info = document.getElementById('file-selected-info');
+      info.classList.remove('hidden');
+      info.innerText = `Selected: ${f.name} (${(f.size / 1024 / 1024).toFixed(2)} MB)`;
+
+      const submitBtn = document.getElementById('upload-submit-btn');
+      submitBtn.disabled = false;
+      submitBtn.className = 'inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-emerald-700 hover:bg-emerald-800 text-white cursor-pointer shadow-sm';
+    }
+
+    function resetFileInput() {
+      chosenFile = null;
+      document.getElementById('pdf-file-input').value = '';
+      document.getElementById('file-drop-prompt').classList.remove('hidden');
+      document.getElementById('file-selected-info').classList.add('hidden');
+      const submitBtn = document.getElementById('upload-submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.className = 'inline-flex items-center space-x-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-slate-200 text-slate-400 cursor-not-allowed';
+    }
+
+    function handleUploadSubmit(e) {
+      e.preventDefault();
+      if (!chosenFile) return;
+
+      const sId = document.getElementById('upload-subject-select').value;
+      const cId = document.getElementById('upload-chapter-select').value;
+      const note = document.getElementById('upload-notes-input').value;
+      const targetId = cId || `subject-${sId}-full`;
+      const subj = SUBJECTS.find(s => s.id === sId);
+
+      const record = {
+        id: targetId,
+        subjectId: sId,
+        subjectName: subj ? subj.nameEn : '',
+        chapterId: cId,
+        fileName: chosenFile.name,
+        fileSize: chosenFile.size,
+        uploadedAt: new Date().toISOString(),
+        blob: chosenFile,
+        note: note
+      };
+
+      savePdfToDb(record);
+      alert(`Success! "${chosenFile.name}" has been attached.`);
+      closeUploadModal();
+    }
+
+    // REVIEW SYSTEM LOGIC
+    const DEFAULT_REVIEWS = [
+      {
+        id: 'rev-1',
+        name: 'Aakash Sharma',
+        role: 'Class 8 RBSE Student, Jaipur',
+        subject: 'Mathematics',
+        rating: 5,
+        date: 'Yesterday',
+        comment: 'Best website for Class 8 Sanjiv Passbook! The step-by-step solutions for Rational Numbers and Mensuration saved my exam. Great work by sarvam-devlopers!',
+        likes: 42
+      },
+      {
+        id: 'rev-2',
+        name: 'Priya Meena',
+        role: 'Class 8 Student, Ajmer',
+        subject: 'Science',
+        rating: 5,
+        date: '3 days ago',
+        comment: 'विज्ञान के सभी चित्र और महत्वपूर्ण प्रश्न बहुत अच्छी तरह से समझाए गए हैं। डाउनलोड पीडीएफ भी तुरंत काम करता है। धन्यवाद sarvam-devlopers!',
+        likes: 38
+      },
+      {
+        id: 'rev-3',
+        name: 'Rohan Verma',
+        role: 'Board Exam Aspirant, Jodhpur',
+        subject: 'All Subjects',
+        rating: 5,
+        date: '1 week ago',
+        comment: 'Cleanest interface with zero clutter. The interactive MCQs and instant PDF generation make revision so easy. Highly recommend to all 8th board students.',
+        likes: 29
+      },
+      {
+        id: 'rev-4',
+        name: 'Sunita Rathore',
+        role: 'Middle School Educator, Kota',
+        subject: 'Social Science & Hindi',
+        rating: 5,
+        date: '2 weeks ago',
+        comment: 'As a teacher, I recommend this portal to all my Class 8 pupils. The blueprints and marks weightage strictly follow the latest rationalized syllabus. Kudos sarvam-devlopers!',
+        likes: 54
+      }
+    ];
+
+    let currentReviews = [];
+
+    function loadReviews() {
+      try {
+        const saved = localStorage.getItem('sanjiv_reviews_v1');
+        currentReviews = saved ? JSON.parse(saved) : DEFAULT_REVIEWS;
+      } catch (e) {
+        currentReviews = DEFAULT_REVIEWS;
+      }
+      renderReviews();
+    }
+
+    function renderReviews() {
+      const grid = document.getElementById('reviews-list-grid');
+      if (!grid) return;
+
+      const userLikes = JSON.parse(localStorage.getItem('sanjiv_user_likes_v1') || '{}');
+
+      grid.innerHTML = currentReviews.map(rev => {
+        const isLiked = !!userLikes[rev.id];
+        const starsStr = '★'.repeat(rev.rating) + '☆'.repeat(5 - rev.rating);
+
+        return `
+          <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs flex flex-col justify-between hover:border-slate-300 transition-colors">
+            <div>
+              <div class="flex items-start justify-between gap-3 mb-2.5">
+                <div class="flex items-center space-x-3">
+                  <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-xs">
+                    ${rev.name[0]}
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-900 leading-snug">${rev.name}</h4>
+                    <div class="flex items-center space-x-1.5 text-[11px] text-slate-500">
+                      <span>${rev.role}</span>
+                      <span aria-hidden="true">·</span>
+                      <span>${rev.subject}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-amber-400 text-sm font-bold tracking-widest shrink-0">
+                  ${starsStr}
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mt-2 font-normal">
+                "${rev.comment}"
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span class="text-[11px] text-slate-400">${rev.date}</span>
+              <button onclick="handleReviewLike('${rev.id}')" class="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md text-xs font-medium cursor-pointer transition-colors ${isLiked ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'hover:bg-slate-100 text-slate-600'}">
+                <svg class="w-3.5 h-3.5 ${isLiked ? 'fill-current text-emerald-600' : 'text-slate-400'}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/></svg>
+                <span>Helpful (${rev.likes})</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function toggleReviewForm() {
+      const container = document.getElementById('review-form-container');
+      const text = document.getElementById('review-toggle-text');
+      if (container.classList.contains('hidden')) {
+        container.classList.remove('hidden');
+        text.innerText = 'Close Form';
+      } else {
+        container.classList.add('hidden');
+        text.innerText = 'Write a Review / Rate';
+      }
+    }
+
+    function handleReviewSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('review-name').value.trim();
+      const role = document.getElementById('review-role').value.trim() || 'Class 8 Student';
+      const subject = document.getElementById('review-subject').value;
+      const rating = parseInt(document.getElementById('review-stars-select').value, 10);
+      const comment = document.getElementById('review-comment').value.trim();
+
+      if (!name || !comment) return;
+
+      const newRev = {
+        id: `rev-${Date.now()}`,
+        name,
+        role,
+        subject,
+        rating,
+        date: 'Just now',
+        comment,
+        likes: 1
+      };
+
+      currentReviews.unshift(newRev);
+      try {
+        localStorage.setItem('sanjiv_reviews_v1', JSON.stringify(currentReviews));
+        const userLikes = JSON.parse(localStorage.getItem('sanjiv_user_likes_v1') || '{}');
+        userLikes[newRev.id] = true;
+        localStorage.setItem('sanjiv_user_likes_v1', JSON.stringify(userLikes));
+      } catch (err) {}
+
+      document.getElementById('review-name').value = '';
+      document.getElementById('review-comment').value = '';
+      toggleReviewForm();
+
+      const alertEl = document.getElementById('review-alert');
+      alertEl.classList.remove('hidden');
+      setTimeout(() => alertEl.classList.add('hidden'), 5000);
+
+      renderReviews();
+    }
+
+    function handleReviewLike(id) {
+      const userLikes = JSON.parse(localStorage.getItem('sanjiv_user_likes_v1') || '{}');
+      const isLiked = !!userLikes[id];
+
+      currentReviews = currentReviews.map(r => {
+        if (r.id === id) {
+          return {
+            ...r,
+            likes: isLiked ? Math.max(0, r.likes - 1) : r.likes + 1
+          };
+        }
+        return r;
+      });
+
+      if (isLiked) {
+        delete userLikes[id];
+      } else {
+        userLikes[id] = true;
+      }
+
+      try {
+        localStorage.setItem('sanjiv_user_likes_v1', JSON.stringify(userLikes));
+        localStorage.setItem('sanjiv_reviews_v1', JSON.stringify(currentReviews));
+      } catch (e) {}
+
+      renderReviews();
+    }
+
+    // INITIALIZATION ON LOAD
+    window.addEventListener('DOMContentLoaded', () => {
+      initIndexedDb();
+      renderSubjectTabs();
+      renderChapters();
+      renderFaqs();
+      loadReviews();
+    });
+  </script>
+</body>
+</html>
